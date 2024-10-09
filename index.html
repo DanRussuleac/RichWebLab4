@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Network and Asynchronous Programming</title>
+  <style>
+    body {
+      font-family: Arial, sans-serif;
+      margin: 20px;
+      background-color: #ffffff;
+      color: #000000;
+    }
+    header {
+      text-align: center;
+      margin-bottom: 30px;
+    }
+    header h1 {
+      margin-bottom: 10px;
+      font-size: 2em;
+    }
+    header p {
+      font-size: 1em;
+      color: #333333;
+    }
+    table {
+      width: 100%;
+      border-collapse: collapse;
+      margin-top: 20px;
+    }
+    th, td {
+      border: 1px solid #cccccc;
+      padding: 8px;
+      text-align: left;
+    }
+    th {
+      background-color: #f2f2f2;
+    }
+    button {
+      margin: 10px 5px;
+      padding: 10px 20px;
+      font-size: 16px;
+      cursor: pointer;
+      border: 1px solid #cccccc;
+      border-radius: 3px;
+      background-color: #e7e7e7;
+      transition: background-color 0.3s ease;
+    }
+    button:hover {
+      background-color: #d4d4d4;
+    }
+    #tableContainer {
+      overflow-x: auto;
+    }
+    #methodUsed {
+      margin-top: 20px;
+      text-align: center;
+      color: #555555;
+    }
+  </style>
+</head>
+<body>
+  <header>
+    <h1>Network and Asynchronous Programming</h1>
+    <p>Dan Russuleac, C21390151</p>
+  </header>
+
+  <div style="text-align: center;">
+    <button id="syncBtn">Fetch with Synchronous XMLHttpRequest</button>
+    <button id="asyncBtn">Fetch with Asynchronous XMLHttpRequest (Callbacks)</button>
+    <button id="fetchBtn">Fetch with Fetch API (Promises)</button>
+  </div>
+
+  <div id="tableContainer"></div>
+  
+  <div id="methodUsed"></div>
+
+  <script src="script.js"></script>
+</body>
+</html>
